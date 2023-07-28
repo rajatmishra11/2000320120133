@@ -1,31 +1,38 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import styles from "./index.css";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 
-const Book = () => {
-  return (
-    <article>
-      <img
-        src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1tXph6SVIgQBULTiQzm3ITCpVIq2W3rLUxHFrSbErsWhznkI1"
-        height={150}
-        width={90}
-        alt="Don quixot"
-      />
-      <h2>Don quixot</h2>
-      <h4>Miguelde cervantes</h4>
-    </article>
-  );
-};
+const imgUrl =
+  "https://images-eu.ssl-images-amazon.com/images/I/91msEbTletL._AC_UL600_SR600,400_.jpg";
+const title = "Shrimad Bhagwat Geeta Yatharoop";
+const author = "A.C. Bhaktivendanta Swami Prabhupada";
+
+const imgUrl2 =
+  "https://images-eu.ssl-images-amazon.com/images/I/71CrTyKsazL._AC_UL600_SR600,400_.jpg";
+const title2 = "Indian Polity (English| 7th Edition)";
+const author2 = "M Laxmikanth ";
 
 const BookList = () => {
   return (
-    <section>
+    <section className="booklist">
+      <Book author={author} title={title} imgUrl={imgUrl} />
+      <Book author={author2} title={title2} imgUrl={imgUrl2} />
+      {/* <Book />
       <Book />
       <Book />
-      <Book />
-      <Book />
-      <Book />
+      <Book /> */}
     </section>
+  );
+};
+
+const Book = (props) => {
+  console.log(props);
+  return (
+    <article className="book">
+      <img src={props.imgUrl} alt={props.title} />
+      <h2>{props.title}</h2>
+      <h4>{props.author}</h4>
+    </article>
   );
 };
 
