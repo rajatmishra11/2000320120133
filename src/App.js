@@ -1,32 +1,30 @@
 import "./App.css";
-
-import { useEffect, useState } from "react";
 import "./App.css";
+
+// import UseCallback from "./Hooks/UseCallback";
+// import FetchUser from "./Components/Fetch_User";
+import Forms from "./Components/forms";
 function App() {
-  const [users, setusers] = useState([]);
-  async function fetchUser() {
-    const response = await fetch("https://randomuser.me/api/?results=100");
-    const allUser = await response.json();
-    setusers(allUser.results);
-  }
-  useEffect(function () {
-    fetchUser();
-  }, []);
+
+  // var x=10;
+  // function updateState(){
+  //   x=15;
+  //   console.log(x)
+  // }
+
   return (
     <div>
-      {users.map(function (item) {
-        return (
-          <div
-            className="name"
-            style={{ backgroundColor: "lightblue", justifyContent: "center" }}
-          >
-            {" "}
-            {item.name.title} {item.name.first} {item.name.last}
-            {", "}
-            {item.location.city}
-          </div>
-        );
-      })}
+      <h1> Hola... I'm Learning React</h1>
+
+
+      {/* <h2>{x}</h2>
+      <button onClick={updateState}>Click me to Change x</button> */}
+
+
+      {/* <FetchUser/> */}
+      {/* <UseCallback/> */}
+      
+      <Forms/>
     </div>
   );
 }
