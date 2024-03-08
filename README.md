@@ -41,6 +41,7 @@ How to use useCallback with example?
 *****************************************************************************************************
 React Form->
 1.  Defaut behavior of HTML form is browsing to a new page on submit -> direct form didn't (edit the value of input field) because in react value is treated as props(read-only behavior).
+
 2.  Other one when -Manupalation of form data requires JS function there is a standard way to achieve this with a technique called "controlled Components"
     ------------------------------------------------
     You can control the values of more than one input field by adding a name attribute to each element.
