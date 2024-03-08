@@ -43,12 +43,12 @@ React Form->
 1.  Defaut behavior of HTML form is browsing to a new page on submit -> direct form didn't (edit the value of input field) because in react value is treated as props(read-only behavior).
 
 2.  Other one when -Manupalation of form data requires JS function there is a standard way to achieve this with a technique called "controlled Components"
-    ------------------------------------------------
-    You can control the values of more than one input field by adding a name attribute to each element.
+
+3.  You can control the values of more than one input field by adding a name attribute to each element.
     We will initialize our state with an empty object.
     To access the fields in the event handler use the event.target.name and event.target.value syntax.
     To update the state, use square brackets [bracket notation] around the property name.
-    --------------------------------------------------
-    Uncontrolled Components-
+    
+4.  Uncontrolled Components-
     When you don't provide a value prop for an <input> element, it becomes uncontrolled.
     To write a uncontrolled component, instead of writing a click handler, you can use the ref to get from the DOM.
