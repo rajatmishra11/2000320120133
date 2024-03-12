@@ -63,7 +63,7 @@ Solution-> useCallback
 How to use useCallback with example?     
 1.      Syntax- 
             const cachedFn = useCallback(fn, dependencies)
-2.      The useCallback Hook only runs when one of its dependencies update.
+2. The useCallback Hook only runs when one of its dependencies update.
 
 
 _________________________________________________________________________________________________________
@@ -82,17 +82,16 @@ React Form->
     When you don't provide a value prop for an <input> element, it becomes uncontrolled.
     To write a uncontrolled component, instead of writing a click handler, you can use the ref to get from the DOM.
 
-________________________________________________________________________
+---------------------------------------------------------------------------
 
 Lifting State-up or pass data from child to parent ->
 1.   Make a function in Parent and pass it(using props) to child component.
 2.  in child component call that function and pass the data(as Parameter) that has to be send to parent component.
 
-________________________________________________________________________
+---------------------------------------------------------------------------
 
-Rendering of List in React :-
-------------------------------------------------------------------------
-1.  use map just like in JS {IPL.map((team)=> "<h1>" {team} "</h1>" )}, where IPL is array.
+Rendering of List in React ?
+1.      use map just like in JS  {IPL.map((team)=> <h1> {team} </h1> )} , where IPL is array.
 2.  Warning: Each child in a list should have a unique "key" prop.
     Why- instead to changing only one(that is added), it update(render) all elements in the list.
     Solution-  use Keys-
