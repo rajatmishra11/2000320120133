@@ -59,8 +59,8 @@ Problem ->
 Solution-> useCallback
 
 -----------------------------------------------------------
-How to use useCallback with example?
-/*      
+
+How to use useCallback with example?     
 1.      Syntax- 
             const cachedFn = useCallback(fn, dependencies)
 2.      The useCallback Hook only runs when one of its dependencies update.
@@ -71,7 +71,7 @@ React Form->
 1.  Defaut behavior of HTML form is browsing to a new page on submit -> 
     direct form didn't (edit the value of input field) because in react value is treated as props(read-only behavior).
 
-2.  Other one when -Manupalation of form data requires JS function there is a standard way to achieve this with a technique called "controlled Components".+_
+2.  Other one when -Manupalation of form data requires JS function there is a standard way to achieve this with a technique called "controlled Components".
 
 3.  You can control the values of more than one input field by adding a name attribute to each element.
     We will initialize our state with an empty object.
@@ -84,14 +84,14 @@ React Form->
 
 ________________________________________________________________________
 
-Lifting State-up or pass data from child to parent->
+Lifting State-up or pass data from child to parent ->
 1.   Make a function in Parent and pass it(using props) to child component.
 2.  in child component call that function and pass the data(as Parameter) that has to be send to parent component.
 
 ________________________________________________________________________
 
 Rendering of List in React :-
-1.   use map just like in JS =={IPL.map((team)=> <h1> {team} </h1> )}, where IPL is array.
+1.  use map just like in JS {IPL.map((team)=> <h1> {team} </h1> )}, where IPL is array.
 2.  Warning: Each child in a list should have a unique "key" prop.
     Why- instead to changing only one(that is added), it update(render) all elements in the list.
     Solution-  use Keys-
