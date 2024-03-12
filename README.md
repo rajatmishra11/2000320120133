@@ -92,7 +92,7 @@ ________________________________________________________________________
 
 Rendering of List in React :-
 ------------------------------------------------------------------------
-1.  use map just like in JS {IPL.map((team)=> <h1> {team} </h1> )}, where IPL is array.
+1.  use map just like in JS {IPL.map((team)=> "<h1>" {team} "</h1>" )}, where IPL is array.
 2.  Warning: Each child in a list should have a unique "key" prop.
     Why- instead to changing only one(that is added), it update(render) all elements in the list.
     Solution-  use Keys-
