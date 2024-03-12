@@ -1,5 +1,15 @@
-Learn React->
+Learn React-
+_______________________________________________________________________
+What is React.js?
+1.  it  is JS library created by Facebook to create user interface.
+2.  React is used make a single page application.
+3.  React allowed us to create reusable UI components.
 
+_______________________________________________________________________
+What is Single Page Application?
+SPA is an application that loads only a singlr document, and then updates the body content of the single document via JavaScript API's.
+Benifits-
+    It allows users to use websites without loading whole new pages, which results in performance gains and a more dynamic experience.
 ________________________________________________________________________
 What is JSX?
 1.  Stands for JavaScript XML or Extension.
