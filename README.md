@@ -6,11 +6,38 @@ What is React.js?
 3.  React allowed us to create reusable UI components.
 
 _______________________________________________________________________
+
 What is Single Page Application?
-SPA is an application that loads only a singlr document, and then updates the body content of the single document via JavaScript API's.
+    SPA is an application that loads only a singlr document, and then updates the body content of the single document via JavaScript API's.
 Benifits-
     It allows users to use websites without loading whole new pages, which results in performance gains and a more dynamic experience.
 ________________________________________________________________________
+
+What is Component in React?
+1.  Components are independent and reusable bits of code.
+2.  They serve the same purpose as JS functions, but work in isolation and return HTML.
+3.  Components come in two type, Class components and Function componnets.
+_________________________________________________________________________
+
+Folder Structures in React?
+1.  package.json - dependencies + scripts.
+2.  node_modules - all dependencies are installed in node modules folder.
+3.  public -
+            a.  index.html file where our app will be rendered.
+                This file should contain div with id root(by  default).
+
+4.  src    - 
+        a.  index.js - Entry point for our react application.
+                        Here we import App from './App'
+                        <APP> is component, render the data of APP component  where id is root means in (index.html) file. 
+        b.  App.css - comtaining CSS of the app.
+        c.  App.js   - Contains class component which extends from React.Component
+                       It contains render method which returns jsx(HTML).
+        d.  App.test.js - Contains test cases for App component.
+
+5.  Other folders can be added
+_________________________________________________________________________
+
 What is JSX?
 1.  Stands for JavaScript XML or Extension.
 2.  with the help of JSX we xan write and add HTML in React.
