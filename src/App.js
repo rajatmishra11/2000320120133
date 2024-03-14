@@ -1,10 +1,13 @@
 import "./App.css";
-import "./App.css";
+// import { useState } from "react";
+
 
 // import UseCallback from "./Hooks/UseCallback";
 // import FetchUser from "./Components/Fetch_User";
 // import Forms from "./Components/forms";
 // import ChildB from "./Hooks/ChildB";
+// import Counter from "./Hooks/Counter";
+// import Custom from "./Hooks/Custom";
 function App() {
 
   // var x=10;
@@ -12,7 +15,6 @@ function App() {
   //   x=15;
   //   console.log(x)
   // }
-
 
   // function getData(data){
   //   console.log(data);
@@ -40,6 +42,31 @@ function App() {
   //   }
   // ]
     
+
+
+  // //--> use state with objects.
+  // const [allValue, setValues]=useState({
+  //   firstName: "Gauri",
+  //   lastName : "Tiwari" 
+  // })
+  // function handleButton(){
+  //   alert("You clicked me");  
+  //   setValues({
+  //     //spread operator is used to assigned default values of all properties in the object
+  //     ...allValue,
+  //     lastName: "Mishra"
+  //   })
+  // }
+
+
+
+  // //-> use state with Array
+  // const [items, setItems]= useState(["Khichdi"])
+  // function handleAdd(){
+  //   setItems(["rice", "daal", "Ghee", "Tadka"]);
+  // }
+
+  
   return (
     <div>
       <h1> Hola... I'm Learning React</h1>
@@ -48,24 +75,44 @@ function App() {
 
 
       {/* <FetchUser/> */}
+
+      
       {/* <UseCallback/> */}
       {/* <Forms/> */}
       {/* <ChildB getData={getData}/> */}
 
 
-      {/*
-       {IPL[0]} <br />
-      {IPL[1]} <br />
-      {IPL[2]} <br />
-       */}
-       {/* {IPL.map((team)=> <h1> {team} </h1> )}
-       {res} */}
+    {/*
+      {IPL[0]} <br />
+    {IPL[1]} <br />
+    {IPL[2]} <br />
+      */}
+      {/* {IPL.map((team)=> <h1> {team} </h1> )}
+      {res} */}
 
 
-       {/* {IPL.map((team, index)=> <h1 key={index}> {team} </h1> )} */}
+      {/* {IPL.map((team, index)=> <h1 key={index}> {team} </h1> )} */}
 
 
-       {/* {l1.map((obj)=> <h1 key={obj.id} > {obj.name}</h1>)} */}
+      {/* {l1.map((obj)=> <h1 key={obj.id} > {obj.name}</h1>)} */}
+
+
+     {/* <h1>hello my name is {allValue.firstName} {allValue.lastName}</h1>
+     <button onClick={handleButton}>Click here</button>  */}
+
+
+    {/* <ol>
+      {items.map(item=>( <li> {item}</li>))}
+    </ol>
+    <button onClick={handleAdd}>Reciepe</button> */}
+
+
+    {/* <Counter/> */}
+
+
+    {/* <Custom/> */}
+
+
     </div>
   );
 }

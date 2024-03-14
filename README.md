@@ -103,7 +103,7 @@ How to use useCallback with example?
 2. The useCallback Hook only runs when one of its dependencies update.
 
 
-_________________________________________________________________________________________________________
+_________________________________________________________________________
 React Form->
 1.  Defaut behavior of HTML form is browsing to a new page on submit -> 
     direct form didn't (edit the value of input field) because in react value is treated as props(read-only behavior).
@@ -125,7 +125,7 @@ Lifting State-up or pass data from child to parent ->
 1.   Make a function in Parent and pass it(using props) to child component.
 2.  in child component call that function and pass the data(as Parameter) that has to be send to parent component.
 
----------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
 Rendering of List in React ?
 1.      use map just like in JS  {IPL.map((team)=> <h1> {team} </h1> )} , where IPL is array.
@@ -137,4 +137,28 @@ Rendering of List in React ?
     b.  Keys should be unique.
     c.  index can be used as a key.
 
+_________________________________________________________________________
+useState hooks with objects-
 
+_________________________________________________________________________
+useState hooks with Arrays-
+
+_________________________________________________________________________
+useReducer Hook- 
+1.  similar to useState, allows to manage state.
+2.  allows for custom logic(complex logic).
+3.  const [state, dispatch] = useReducer(reducer fn , initialState)
+4.  The reducer function contains your custom state logic and the initialStatecan be a simple value 
+    but generally will contain an object, manage the state.
+    reducer - takes current state and action and returns new state.
+    newState= reducer(currentState, action)
+e.  The useReducer Hook returns the current stateand a dispatch method.
+
+__________________________________________________________________________
+custom Hooks-
+1.  A custom Hook is a JS function whose name starts with "use"
+2.  We can use other Hooks in custom hooks as well
+
+Why to use custom hooks?
+    to remove the duplicated logic in components and we can extract that logic to custom hooks.
+    Example: useFetch
