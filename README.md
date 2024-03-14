@@ -183,13 +183,13 @@ _________________________________________________________________________
 1. 
 use map just like in JS 
 ``` {IPL.map((team)=> <h1> {team} </h1> )} , where IPL is array.```
-2.  Warning: Each child in a list should have a unique "key" prop.
-    Why- instead to changing only one(that is added), it update(render) all elements in the list.
-    Solution-  use Keys-
-    a.  Keys help React identify which items have changed, are added or removed. Keys should be given to the elements
-    inside the array to give the elements a stable identify.
-    b.  Keys should be unique.
-    c.  index can be used as a key.
+2.  Warning: Each child in a list should have a**unique "key" prop**.
+    -   Why- instead to changing only one(that is added), it update(render) all elements in the list.
+    -   **Solution-  use Keys**-
+    -   .  Keys help React identify which items have changed, are added or removed. Keys should be given to the elements
+    -   inside the array to give the elements a stable identify.
+    -     Keys should be unique.
+    -     index can be used as a key.
 
 ______________________________________________
 ### useState hooks with objects-
@@ -252,8 +252,20 @@ ___________________________________________________________________
 -   Element Variables
 -   Ternary Operator
 -   Short Circuit Operator
-
 _______________________________________________
+### React CSS Styling-
+1.  Inline CSS
+    -   To style an element with the **inline style** attribute, the value must be a JavaScript object.
+    ```  <h1 style={{color: "red"}}>Hello Style!</h1> ```
+    -   {{}}
+    -   Since the inline CSS is written in a JavaScript object, properties with two names, like background-color, must be written with **camel case** syntax,
+    - eg. ``` Use backgroundColor instead of background-color ```
+
+2.  External Style Sheet-
+    -   You can write your CSS styling in a separate file, just save the file with the .css file extension, 
+        and import it in your application.
+3.  CSS Module
+__________________________________________________
 
 ### React Router V6-
 1. Installation : ```npm install react-router-dom```
@@ -261,7 +273,7 @@ _______________________________________________
 
 ________________________________________________________________________
 ### What is middleware in Redux?
-Middleware is a higher-order function that intercepts actions before they reach the reducers. Middleware functions are where you handle cross cutting concerns
-Middleware is a way to intercept actions before they reach the Redux store. Middleware functions are executed synchronously from top to bottom. If
-Middleware is a higher order function that intercepts actions before they reach the reducers. Middleware functions are passed an action, and if the
-Middleware is a higher order function that intercepts actions before they reach the reducers. Middleware functions are passed the next stack of middle
+-   Middleware is a higher-order function that intercepts actions before they reach the reducers. 
+-   Middleware functions are where you handle cross cutting concerns
+-   Middleware is a way to intercept actions before they reach the Redux store. Middleware functions are executed synchronously from top to bottom. 
+- Middleware is a higher order function that intercepts actions before they reach the reducers.
