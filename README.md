@@ -195,14 +195,14 @@ Axios in React-
 
 _______________________________________________________________________________
 How to install axios ?
-        npm i axios
+```  npm i axios ```
 How to Use?
-        import axios from 'axios';
-        const fetchData = ()=>{
-                // async function
-                return await axios.get('https://api.example.com/data')
-                                .then(response => response.data);
-            }
+``` import axios from 'axios';
+    const fetchData = ()=>{
+            // async function
+            return await axios.get('https://api.example.com/data')
+                            .then(response => response.data);
+        } ```
 
 Use this data in componentDidMount or useEffect
 Note:- In class based components you have to bind the functions. But in functional components it's not needed.
