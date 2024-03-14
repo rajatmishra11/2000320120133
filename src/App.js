@@ -1,9 +1,11 @@
 import "./App.css";
 
 
+
+
 // import { useState } from "react";
-
-
+// import UseEffect from "./Hooks/UseEffect";
+import UseRef from "./Hooks/UseRef";
 // import UseCallback from "./Hooks/UseCallback";
 // import FetchUser from "./Components/Fetch_User";
 // import Forms from "./Components/forms";
@@ -12,7 +14,10 @@ import "./App.css";
 // import Custom from "./Hooks/Custom";
 // import AxiosTutorial from "./Components/AxiosTutorial";
 // import AxiosPost from './Components/AxiosPost';
-import AxiosUpdate from "./Components/AxiosUpdate";
+// import AxiosUpdate from "./Components/AxiosUpdate";
+
+
+
 function App() {
 
   // var x=10;
@@ -80,8 +85,10 @@ function App() {
 
 
       {/* <FetchUser/> */}
+ 
+      {/* <UseEffect/> */}
 
-
+      <UseRef/>
       {/* <UseCallback/> */}
       {/* <Forms/> */}
       {/* <ChildB getData={getData}/> */}
@@ -124,7 +131,7 @@ function App() {
     {/* <AxiosPost/> */}
 
 
-    <AxiosUpdate/>
+    {/* <AxiosUpdate/> */}
 
     </div>
   );
