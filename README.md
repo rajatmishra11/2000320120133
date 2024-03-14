@@ -150,8 +150,7 @@ _______________________________________________________________
 -----------------------------------------------------------
 
 ### How to use useCallback with example?     
-1.      Syntax- 
-    ```const cachedFn = useCallback(fn, dependencies)```
+1.  ``` Syntax- const cachedFn = useCallback(fn, dependencies)```
 2. The useCallback Hook only runs when one of its dependencies update.
 
 
@@ -168,7 +167,7 @@ _________________________________________________________________________
     To access the fields in the event handler use the event.target.name and event.target.value syntax.
     To update the state, use square brackets [bracket notation] around the property name.
     
-4.  ##### Uncontrolled Components-
+4.  #### Uncontrolled Components-
     When you don't provide a value prop for an <input> element, it becomes uncontrolled.
     To write a uncontrolled component, instead of writing a click handler, you can use the ref to get from the DOM.
 
@@ -182,9 +181,8 @@ _________________________________________________________________________
 
 ### Rendering of List in React ?
 1. 
-```
-use map just like in JS  {IPL.map((team)=> <h1> {team} </h1> )} , where IPL is array.
-```
+use map just like in JS 
+``` {IPL.map((team)=> <h1> {team} </h1> )} , where IPL is array.```
 2.  Warning: Each child in a list should have a unique "key" prop.
     Why- instead to changing only one(that is added), it update(render) all elements in the list.
     Solution-  use Keys-
@@ -203,11 +201,11 @@ _________________________________________________________________________
 ### useReducer Hook- 
 1.  similar to useState, allows to manage state.
 2.  allows for custom logic(complex logic).
-3.  const [state, dispatch] = useReducer(reducer fn , initialState)
+3.  ```const [state, dispatch] = useReducer(reducer fn , initialState)```
 4.  The reducer function contains your custom state logic and the initialStatecan be a simple value 
     but generally will contain an object, manage the state.
     reducer - takes current state and action and returns new state.
-    newState= reducer(currentState, action)
+    ```newState= reducer(currentState, action)```
 5.  The useReducer Hook returns the current stateand a dispatch method.
 
 __________________________________________________________________________
@@ -237,21 +235,28 @@ _______________________________________________________________________________
 ### How to install axios?
 ```  npm i axios ```
 ### How to Use?
-``` import axios from 'axios';
-    const fetchData = ()=>{
-            // async function
-            return await axios.get('https://api.example.com/data')
-                            .then(response => response.data);
-        } 
+``` 
+import axios from 'axios';
+const fetchData = ()=>{
+        // async function
+        return await axios.get('https://api.example.com/data')
+                        .then(response => response.data);
+    } 
 ```
-
 Use this data in componentDidMount or useEffect
-Note:- In class based components you have to bind the functions. But in functional components it's not needed.
-Note:- In class based components you need to bind the functions.
+-   Note:- In class based components you have to bind the functions. But in functional components it's not needed.
+___________________________________________________________________
+### Conditional Rendering in React.js:
 
-_______________________________________________________________________
+-   if/else
+-   Element Variables
+-   Ternary Operator
+-   Short Circuit Operator
+
+_______________________________________________
+
 ### React Router V6-
-1. Installation : npm install react-router-dom
+1. Installation : ```npm install react-router-dom```
 
 
 ________________________________________________________________________

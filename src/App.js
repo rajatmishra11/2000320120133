@@ -3,9 +3,10 @@ import "./App.css";
 
 
 
+
 // import { useState } from "react";
 // import UseEffect from "./Hooks/UseEffect";
-import UseRef from "./Hooks/UseRef";
+// import UseRef from "./Hooks/UseRef";
 // import UseCallback from "./Hooks/UseCallback";
 // import FetchUser from "./Components/Fetch_User";
 // import Forms from "./Components/forms";
@@ -15,7 +16,7 @@ import UseRef from "./Hooks/UseRef";
 // import AxiosTutorial from "./Components/AxiosTutorial";
 // import AxiosPost from './Components/AxiosPost';
 // import AxiosUpdate from "./Components/AxiosUpdate";
-
+// import AgeValidation from "./Components/AgeValidation";
 
 
 function App() {
@@ -88,9 +89,15 @@ function App() {
  
       {/* <UseEffect/> */}
 
-      <UseRef/>
+      {/* <UseRef/> */}
+
+
       {/* <UseCallback/> */}
+
+
       {/* <Forms/> */}
+
+
       {/* <ChildB getData={getData}/> */}
 
 
@@ -132,6 +139,9 @@ function App() {
 
 
     {/* <AxiosUpdate/> */}
+
+
+    {/* <AgeValidation/> */}
 
     </div>
   );
