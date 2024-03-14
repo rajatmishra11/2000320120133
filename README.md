@@ -58,6 +58,7 @@ React Fragments-
 1.  used when you want to return multiple children from a component without adding extra nodes to the DOM.
 2.  A container to group without adding extra nodes in DOM.
 Example:
+```
         const ListItem = ({item}) => {
         return (
         <div>   
@@ -66,9 +67,11 @@ Example:
         </div>,
         <hr/>
         );}
-
+```
 Instead of returning multiple elements like above, we can wrap them inside React Fragment.
+``` 
 Return (<>...</>) instead of (<div><h2>..</h2><hr/></div>)
+```
 _________________________________________________________________________
 What is Props?
 1.  stands for Properties.
