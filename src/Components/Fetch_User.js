@@ -7,6 +7,7 @@ function FetchUser() {
     const allUser = await response.json();
     setusers(allUser.results);
   }
+  
   useEffect(function () {
     fetchUser();
   }, []);

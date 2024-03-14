@@ -1,4 +1,5 @@
 import "./App.css";
+
 // import { useState } from "react";
 
 
@@ -8,6 +9,7 @@ import "./App.css";
 // import ChildB from "./Hooks/ChildB";
 // import Counter from "./Hooks/Counter";
 // import Custom from "./Hooks/Custom";
+import AxiosTutorial from "./Components/AxiosTutorial";
 function App() {
 
   // var x=10;
@@ -76,7 +78,7 @@ function App() {
 
       {/* <FetchUser/> */}
 
-      
+
       {/* <UseCallback/> */}
       {/* <Forms/> */}
       {/* <ChildB getData={getData}/> */}
@@ -112,6 +114,8 @@ function App() {
 
     {/* <Custom/> */}
 
+
+    <AxiosTutorial/>
 
     </div>
   );

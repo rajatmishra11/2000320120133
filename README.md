@@ -54,7 +54,22 @@ Rules for Writing JSX-
 _______________________________________________________________________
 Babel is JS compiler, which convert JSX into Pure JS.
 ________________________________________________________________________
+React Fragments-
+1.  used when you want to return multiple children from a component without adding extra nodes to the DOM.
+2.  A container to group without adding extra nodes in DOM.
+Example:
+        const ListItem = ({item}) => {
+        return (
+        <div>   
+        <h2>{item.name}</h2>
+        <p>{item.price}</p>
+        </div>,
+        <hr/>
+        );}
 
+Instead of returning multiple elements like above, we can wrap them inside React Fragment.
+Return (<>...</>) instead of (<div><h2>..</h2><hr/></div>)
+_________________________________________________________________________
 What is Props?
 1.  stands for Properties.
 2.  Props are used to transfer data from one element to another.
@@ -152,7 +167,7 @@ useReducer Hook-
     but generally will contain an object, manage the state.
     reducer - takes current state and action and returns new state.
     newState= reducer(currentState, action)
-e.  The useReducer Hook returns the current stateand a dispatch method.
+5.  The useReducer Hook returns the current stateand a dispatch method.
 
 __________________________________________________________________________
 custom Hooks-
@@ -160,5 +175,46 @@ custom Hooks-
 2.  We can use other Hooks in custom hooks as well
 
 Why to use custom hooks?
-    to remove the duplicated logic in components and we can extract that logic to custom hooks.
-    Example: useFetch
+1.  to remove the duplicated logic in components and we can extract that logic to custom hooks.
+2.  Example: useFetch
+_________________________________________________________________________
+Axios in React-
+1.  In React, backend communication is typically achieved using the HTTP protocol.
+    While many developers are familiar with the XML HTTP request interface and Fetch API for making HTTP requests,
+    there’s another powerful library called Axios that simplifies the process further.
+2.  Axios, which is a popular library is mainly used to send asynchronous HTTP requests to REST endpoints.
+3.  This library is very useful to perform CRUD operations.
+4.  This popular library is used to communicate with the backend. 
+5.  Axios supports the Promise API, native to JS ES6.
+6.  Using Axios we make API requests in our application. Once the request is made we get the data in Return, and then we use this data in our project. 
+7.  It also provides support for async/await syntax introduced in ES8.
+8.  Axios has methods like get(), post() etc., which are chainable.
+9.  Axios is lightweight (~9kB gzipped), makes it easy to add to your project.
+10.  Axios does not have any dependencies.
+
+_______________________________________________________________________________
+How to install axios ?
+        npm i axios
+How to Use?
+        import axios from 'axios';
+        const fetchData = ()=>{
+                // async function
+                return await axios.get('https://api.example.com/data')
+                                .then(response => response.data);
+            }
+
+Use this data in componentDidMount or useEffect
+Note:- In class based components you have to bind the functions. But in functional components it's not needed.
+Note:- In class based components you need to bind the functions.
+
+_______________________________________________________________________
+React Router V6-
+1. Installation : npm install react-router-dom
+
+
+________________________________________________________________________
+What is middleware in Redux?
+Middleware is a higher-order function that intercepts actions before they reach the reducers. Middleware functions are where you handle cross cutting concerns
+Middleware is a way to intercept actions before they reach the Redux store. Middleware functions are executed synchronously from top to bottom. If
+Middleware is a higher order function that intercepts actions before they reach the reducers. Middleware functions are passed an action, and if the
+Middleware is a higher order function that intercepts actions before they reach the reducers. Middleware functions are passed the next stack of middle
