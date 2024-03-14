@@ -1,5 +1,6 @@
 import "./App.css";
 
+
 // import { useState } from "react";
 
 
@@ -9,7 +10,9 @@ import "./App.css";
 // import ChildB from "./Hooks/ChildB";
 // import Counter from "./Hooks/Counter";
 // import Custom from "./Hooks/Custom";
-import AxiosTutorial from "./Components/AxiosTutorial";
+// import AxiosTutorial from "./Components/AxiosTutorial";
+// import AxiosPost from './Components/AxiosPost';
+import AxiosUpdate from "./Components/AxiosUpdate";
 function App() {
 
   // var x=10;
@@ -89,17 +92,17 @@ function App() {
     {IPL[1]} <br />
     {IPL[2]} <br />
       */}
-      {/* {IPL.map((team)=> <h1> {team} </h1> )}
+    {/* {IPL.map((team)=> <h1> {team} </h1> )}
       {res} */}
 
 
-      {/* {IPL.map((team, index)=> <h1 key={index}> {team} </h1> )} */}
+    {/* {IPL.map((team, index)=> <h1 key={index}> {team} </h1> )} */}
 
 
-      {/* {l1.map((obj)=> <h1 key={obj.id} > {obj.name}</h1>)} */}
+    {/* {l1.map((obj)=> <h1 key={obj.id} > {obj.name}</h1>)} */}
 
 
-     {/* <h1>hello my name is {allValue.firstName} {allValue.lastName}</h1>
+    {/* <h1>hello my name is {allValue.firstName} {allValue.lastName}</h1>
      <button onClick={handleButton}>Click here</button>  */}
 
 
@@ -115,7 +118,13 @@ function App() {
     {/* <Custom/> */}
 
 
-    <AxiosTutorial/>
+    {/* <AxiosTutorial/> */}
+
+    
+    {/* <AxiosPost/> */}
+
+
+    <AxiosUpdate/>
 
     </div>
   );

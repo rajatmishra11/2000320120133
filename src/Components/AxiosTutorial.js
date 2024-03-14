@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
-const user_API= "https://jsonplaceholder.typicode.com/users"
-const post_API= "https://jsonplaceholder.typicode.com/posts/"
+// const user_API= "https://jsonplaceholder.typicode.com/users"
+// const post_API= "https://jsonplaceholder.typicode.com/posts/"
 const cmnt_API= "https://jsonplaceholder.typicode.com/comments"
 
 
