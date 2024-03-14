@@ -23,8 +23,8 @@ _________________________________________________________________________
 1.  #### package.json - dependencies + scripts.
 2.  #### node_modules - all dependencies are installed in node modules folder.
 3.  #### public -
-        a.  index.html file where our app will be rendered.
-                This file should contain div with id root(by  default).
+    -  index.html file where our app will be rendered.
+        This file should contain div with id root(by  default).
 
 4.  #### src-
     -  ##### index.js 
@@ -179,10 +179,8 @@ _________________________________________________________________________
 
 -------------------------------------------------------------------------
 
-### Rendering of List in React ?
-1. 
-use map just like in JS 
-``` {IPL.map((team)=> <h1> {team} </h1> )} , where IPL is array.```
+### Rendering of List in React -
+1. use map just like in JS  ``` {IPL.map((team)=> <h1> {team} </h1> )} , where IPL is array.```
 2.  Warning: Each child in a list should have a**unique "key" prop**.
     -   Why- instead to changing only one(that is added), it update(render) all elements in the list.
     -   **Solution-  use Keys**-
