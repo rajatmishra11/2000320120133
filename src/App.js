@@ -1,4 +1,5 @@
 import "./App.css";
+import Routing from "./Components/Routing";
 
 
 
@@ -159,6 +160,8 @@ function App() {
     {/* <AgeValidation/> */}
 
     {/* <Name  fname= "John" lname="Doe"/> */}
+
+    <Routing/>
     </div>
   );
 }

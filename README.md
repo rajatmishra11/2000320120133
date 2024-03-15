@@ -326,9 +326,43 @@ _______________________________________________
 __________________________________________________
 
 ### React Router V6-
-1. Installation : ```npm install react-router-dom```
+1.  React Router enables "client side routing".
+2.  React router is fully featured client and server side routing JS library for building user interface.
+3.  Client side routing allows your app to update the URL from a link click without making another request for another document from the server. It provides API's which are easy to understand
+4.  Usage-
+    - Installation : ```npm install react-router-dom```
+    - import BrowserRouter in index.js file
+    - wrap your application(<App/>) in index.js
+```
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+```
+_______________________________________________
+### React Router Component-
+1.  **BrowserRouter**
+    -   BrowserRouter is a router implementation that uses the HTML5 history API(pushState, replaceState, and popState events) to keep you UI in sync with the URL. 
+    -   It is a parent component that is used to store all of the other components.
+2.  **Routes**
+    -  It’s a new component introduced in the v6 and an upgrade of the component. The main advantages of Routes over Switch are:
+    -   Relative s and s
+    -   Routes are chosen based on the best match instead of being traversed in order.
 
+3.  **Route**: 
+    -   Route is the conditionally shown component that renders some UI when its path matches the current URL.
+4.  **Link**: 
+    -   The link component is used to create links to different routes and implement navigation around the application. 
+    -   It works like an HTML anchor tag.
 
+```
+<Routes>
+    <Route path="/" element={ <div> I'm Home Page </div>}>
+    <Route path="/contact" element={<Contact/>}
+    <Link to="/about">About</Link>
+</Routes>
+```
 ________________________________________________________________________
 ### What is middleware in Redux?
 -   Middleware is a higher-order function that intercepts actions before they reach the reducers. 
