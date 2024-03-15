@@ -178,7 +178,20 @@ _______________________________________________
     - create   -same
     - provider -same
     - useContext   - uses context from any parent or grandparent etc.
+
 ______________________________________________
+### Memoization-
+1. an optimization technique for accelerating computer programs by caching the 
+    results of heavy function calls and returning them when similar inputs are encountered repeatedly.
+2.  React memoization is similar to caching.
+3.  Avoid unnecessary calls.
+
+### useMemo-
+1.  memoization as caching a value so that it does not need to be recalculated.
+2.   React useMemo Hook returns a memoized value.
+3.   useMemo Hook only runs when one of its dependencies update.
+
+_______________________________________________
 ### What is usecallback?
 1.  The useCallback and useMemo Hooks are used to optimize the re-rendering of components in React. They help us avoid unnecessary renders.
 2.  The main difference between the two hooks, useCallback and useMemo, is that useCallback will always return a new memoized function if any of its dependencies change.

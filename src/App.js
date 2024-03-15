@@ -8,12 +8,14 @@ import "./App.css";
 
 
 
+
 // import { useState } from "react";
 // import UseEffect from "./Hooks/UseEffect";
 // import UseRef from "./Hooks/UseRef";
 // import Parent from "./Hooks/PropDrilling";
 // import UseContext from "./Hooks/UseContext";
 // import UseContext2 from "./Hooks/UseContext2";
+// import UseMemo from "./Hooks/UseMemo";
 // import UseCallback from "./Hooks/UseCallback";
 // import FetchUser from "./Components/Fetch_User";
 // import Forms from "./Components/forms";
@@ -102,28 +104,23 @@ function App() {
       {/* <h2>{x}</h2>
       <button onClick={updateState}>Click me to Change x</button> */}
 
-
       {/* <FetchUser/> */}
  
       {/* <UseEffect/> */}
 
       {/* <UseRef/> */}
 
-
       {/* <Parent/> */}
-
 
       {/* <UseContext/> */}
 
-
       {/* <UseContext2/> */}
 
-      
+      {/* <UseMemo/> */}
+
       {/* <UseCallback/> */}
 
-
       {/* <Forms/> */}
-
 
       {/* <ChildB getData={getData}/> */}
 
@@ -139,37 +136,27 @@ function App() {
 
     {/* {IPL.map((team, index)=> <h1 key={index}> {team} </h1> )} */}
 
-
     {/* {l1.map((obj)=> <h1 key={obj.id} > {obj.name}</h1>)} */}
-
 
     {/* <h1>hello my name is {allValue.firstName} {allValue.lastName}</h1>
      <button onClick={handleButton}>Click here</button>  */}
-
 
     {/* <ol>
       {items.map(item=>( <li> {item}</li>))}
     </ol>
     <button onClick={handleAdd}>Reciepe</button> */}
 
-
     {/* <Counter/> */}
-
 
     {/* <Custom/> */}
 
-
     {/* <AxiosTutorial/> */}
-
-    
+ 
     {/* <AxiosPost/> */}
-
 
     {/* <AxiosUpdate/> */}
 
-
     {/* <AgeValidation/> */}
-
 
     {/* <Name  fname= "John" lname="Doe"/> */}
     </div>
