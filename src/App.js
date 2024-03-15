@@ -4,6 +4,7 @@ import "./App.css";
 
 
 
+
 // import { useState } from "react";
 // import UseEffect from "./Hooks/UseEffect";
 // import UseRef from "./Hooks/UseRef";
@@ -17,7 +18,7 @@ import "./App.css";
 // import AxiosPost from './Components/AxiosPost';
 // import AxiosUpdate from "./Components/AxiosUpdate";
 // import AgeValidation from "./Components/AgeValidation";
-
+// import Name from "./Components/Name";
 
 function App() {
 
@@ -78,6 +79,17 @@ function App() {
   // }
 
   
+  // const arr=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+  // const one=arr[0]
+  // const two=arr[1]
+  // const three=arr[2]
+
+// const [one , two, three]=arr;
+// console.log(one, two, three);
+
+// const [one, two, three, ...rest]=arr;
+// console.log(one, two, three, rest);
+
   return (
     <div>
       <h1> Hola... I'm Learning React</h1>
@@ -143,6 +155,8 @@ function App() {
 
     {/* <AgeValidation/> */}
 
+
+    {/* <Name  fname= "John" lname="Doe"/> */}
     </div>
   );
 }

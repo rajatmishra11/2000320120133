@@ -186,8 +186,8 @@ _________________________________________________________________________
     -   **Solution-  use Keys**-
     -   .  Keys help React identify which items have changed, are added or removed. Keys should be given to the elements
     -   inside the array to give the elements a stable identify.
-    -     Keys should be unique.
-    -     index can be used as a key.
+    -   Keys should be unique.
+    -   index can be used as a key.
 
 ______________________________________________
 ### useState hooks with objects-
@@ -244,6 +244,10 @@ const fetchData = ()=>{
 Use this data in componentDidMount or useEffect
 -   Note:- In class based components you have to bind the functions. But in functional components it's not needed.
 ___________________________________________________________________
+### Destructuring in React:
+
+_______________________________________________
+
 ### Conditional Rendering in React.js:
 
 -   if/else
