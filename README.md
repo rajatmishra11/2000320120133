@@ -127,7 +127,7 @@ ______________________________________________________________________
 7.  ``` useEffect(<function>, <dependency>) ```
 ______________________________________________________________________
 ### useRef-
-1.  Directly DOM Manupulation
+1.  Directly - DOM Manupulation
 2.  useRef returns a ref object with a single **current** property initially set to the initial value you provided.
 3.  ```const ref = useRef(initialValue)```
 4. usage:
@@ -136,6 +136,49 @@ ______________________________________________________________________
     - Manipulating the DOM with a ref
     - Avoiding recreating the ref contents
 _______________________________________________________________
+### Props Drilling:
+1.  Prop drilling is basically a situation when the same data is being sent 
+    at almost every level due to requirements in the final level.
+2.  **Why not to Use the PropsDrilling**-
+    - Code Complexity increases.
+    - Reduced Maintainability.
+    - Performance Overhead.
+    - Decreased Component Reuseability.
+    - Increased Development Time.
+3.  **Solution**
+    - Solve prop drilling with UseContext Hooks.
+_______________________________________________
+### Context API / useState Hook-
+1.  Creator: a new context ```const DataContext = createContext();```
+2.  Provider- wrap the Components
+        ```   
+        <DataContext.Provider value={{ fname, lname}}> 
+        <>
+         </DataContext.Provider> 
+        ```
+3.  Consumer-     
+        ```  
+        <DataContext.Consumer>
+            {({ fname, lname }) => (
+                <>
+                    <h1>{fname}</h1>
+                    <h1>{lname}</h1>
+                </>
+            )}
+        </DataContext.Consumer>
+         ```
+4.  **Problem**- Nesting(wrapping increase) leads to arise problem like Callback hell.
+5.  **Solution** useContext Hook
+_______________________________________________
+### useContext Hook-
+1.  React Context is a way to manage state globally.
+2.  It can be used together with the useState Hook to share state between 
+    deeply nested components more easily than with useState alone.
+3.  usage:
+    - create   -same
+    - provider -same
+    - useContext   - uses context from any parent or grandparent etc.
+______________________________________________
 ### What is usecallback?
 1.  The useCallback and useMemo Hooks are used to optimize the re-rendering of components in React. They help us avoid unnecessary renders.
 2.  The main difference between the two hooks, useCallback and useMemo, is that useCallback will always return a new memoized function if any of its dependencies change.

@@ -5,9 +5,15 @@ import "./App.css";
 
 
 
+
+
+
 // import { useState } from "react";
 // import UseEffect from "./Hooks/UseEffect";
 // import UseRef from "./Hooks/UseRef";
+// import Parent from "./Hooks/PropDrilling";
+// import UseContext from "./Hooks/UseContext";
+// import UseContext2 from "./Hooks/UseContext2";
 // import UseCallback from "./Hooks/UseCallback";
 // import FetchUser from "./Components/Fetch_User";
 // import Forms from "./Components/forms";
@@ -92,7 +98,7 @@ function App() {
 
   return (
     <div>
-      <h1> Hola... I'm Learning React</h1>
+      <h1>React</h1>
       {/* <h2>{x}</h2>
       <button onClick={updateState}>Click me to Change x</button> */}
 
@@ -104,6 +110,15 @@ function App() {
       {/* <UseRef/> */}
 
 
+      {/* <Parent/> */}
+
+
+      {/* <UseContext/> */}
+
+
+      {/* <UseContext2/> */}
+
+      
       {/* <UseCallback/> */}
 
 
