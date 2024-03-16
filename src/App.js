@@ -1,5 +1,5 @@
 import "./App.css";
-import Routing from "./Components/Routing";
+
 
 
 
@@ -28,6 +28,12 @@ import Routing from "./Components/Routing";
 // import AxiosUpdate from "./Components/AxiosUpdate";
 // import AgeValidation from "./Components/AgeValidation";
 // import Name from "./Components/Name";
+// import Routing from "./Components/Routing";
+
+import { Provider } from "react-redux";
+import store from "../src/reduxContainer/Store"
+import BookContainer from "./reduxContainer/BookContainer";
+
 
 function App() {
 
@@ -100,69 +106,75 @@ function App() {
 // console.log(one, two, three, rest);
 
   return (
-    <div>
-      <h1>React</h1>
-      {/* <h2>{x}</h2>
-      <button onClick={updateState}>Click me to Change x</button> */}
 
-      {/* <FetchUser/> */}
+  //   <div>
+  //     <h1>React</h1>
+  //     {/* <h2>{x}</h2>
+  //     <button onClick={updateState}>Click me to Change x</button> */}
+
+  //     {/* <FetchUser/> */}
  
-      {/* <UseEffect/> */}
+  //     {/* <UseEffect/> */}
 
-      {/* <UseRef/> */}
+  //     {/* <UseRef/> */}
 
-      {/* <Parent/> */}
+  //     {/* <Parent/> */}
 
-      {/* <UseContext/> */}
+  //     {/* <UseContext/> */}
 
-      {/* <UseContext2/> */}
+  //     {/* <UseContext2/> */}
 
-      {/* <UseMemo/> */}
+  //     {/* <UseMemo/> */}
 
-      {/* <UseCallback/> */}
+  //     {/* <UseCallback/> */}
 
-      {/* <Forms/> */}
+  //     {/* <Forms/> */}
 
-      {/* <ChildB getData={getData}/> */}
-
-
-    {/*
-      {IPL[0]} <br />
-    {IPL[1]} <br />
-    {IPL[2]} <br />
-      */}
-    {/* {IPL.map((team)=> <h1> {team} </h1> )}
-      {res} */}
+  //     {/* <ChildB getData={getData}/> */}
 
 
-    {/* {IPL.map((team, index)=> <h1 key={index}> {team} </h1> )} */}
+  //   {/*
+  //     {IPL[0]} <br />
+  //   {IPL[1]} <br />
+  //   {IPL[2]} <br />
+  //     */}
+  //   {/* {IPL.map((team)=> <h1> {team} </h1> )}
+  //     {res} */}
 
-    {/* {l1.map((obj)=> <h1 key={obj.id} > {obj.name}</h1>)} */}
 
-    {/* <h1>hello my name is {allValue.firstName} {allValue.lastName}</h1>
-     <button onClick={handleButton}>Click here</button>  */}
+  //   {/* {IPL.map((team, index)=> <h1 key={index}> {team} </h1> )} */}
 
-    {/* <ol>
-      {items.map(item=>( <li> {item}</li>))}
-    </ol>
-    <button onClick={handleAdd}>Reciepe</button> */}
+  //   {/* {l1.map((obj)=> <h1 key={obj.id} > {obj.name}</h1>)} */}
 
-    {/* <Counter/> */}
+  //   {/* <h1>hello my name is {allValue.firstName} {allValue.lastName}</h1>
+  //    <button onClick={handleButton}>Click here</button>  */}
 
-    {/* <Custom/> */}
+  //   {/* <ol>
+  //     {items.map(item=>( <li> {item}</li>))}
+  //   </ol>
+  //   <button onClick={handleAdd}>Reciepe</button> */}
 
-    {/* <AxiosTutorial/> */}
+  //   {/* <Counter/> */}
+
+  //   {/* <Custom/> */}
+
+  //   {/* <AxiosTutorial/> */}
  
-    {/* <AxiosPost/> */}
+  //   {/* <AxiosPost/> */}
 
-    {/* <AxiosUpdate/> */}
+  //   {/* <AxiosUpdate/> */}
 
-    {/* <AgeValidation/> */}
+  //   {/* <AgeValidation/> */}
 
-    {/* <Name  fname= "John" lname="Doe"/> */}
+  //   {/* <Name  fname= "John" lname="Doe"/> */}
 
-    <Routing/>
-    </div>
+  //   {/* <Routing/> */}
+  // </div>
+
+  <Provider store={store}>
+      <BookContainer/>
+    </Provider>
+
   );
 }
 

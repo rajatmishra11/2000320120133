@@ -381,9 +381,95 @@ Example usage:
 4. Passing Data with useNavigate Hook in React.js-
     -   Refer to Home.js and About.js for more information
 ___________________________________________________________
+### React- Redux:
+1.  Redux is a predictable state container for JS applications.
+2.  Redux is a library for JS Application.
+3.  You can use Redux together with React, or with any other view library (Angular, Vue, Vanilla).
+4.  Redux is a State Container, which means that it holds your application’s state.
+    -   Registration Form
+___________________________________________________________
+### Core Concept of Redux:
+1.  **Store**- Holds state of your Application.
+2   **Action** - Describe the changes in the state of your application.
+3.  **Reducer** - Actually carries out the state transition dependending on the action.
 
+```
+Shop <-------------> Shopkeeper <----------------> Customer
+(Store)              (Reducer)                    (action)
+```
+_________________________________________________________
+### Rules of Redux:
+1.  The State of your Application is stored in an object tree within  a single store.
+```
+{
+    NumberOfBooks:10
+}
+```
+2.  only way to change the state is to emit an action,
+    an object decribing what happend.
+```
+{Type: "buyBook"}
+```
+3. to specify how the state tree is transformed by actions, we write pure reducer.
+__________________________________________________________
+### Installation-
+```
+npm install react-redux
+```
+__________________________________________________________
+### Action in Redux-
+1.  Actions are JS object that contains information.
+2.  Actions are the only source of information for the Redux Store. It only tells us what has happened.
+3.  Actions have a type property and it should be defined in string constraint.
+4.  It's compulsory to include the **type property** in the object
+```
+Syntax:
+const Actions   =   {
+    type: 'buyBook'
+}
+```
+____________________________________________________________
+### Reducer in React-
+1.  Reducers decides how the state of application changes depending upon the sent to the store.
+2.  Reducers are the function that accepts state and action as parameters and returns the next state of the application.
+```
+(previousState, action) => newState
+```
+____________________________________________________________
+### React Store:
+1.  Entire Application contains Single Store.
+2.  It is responsible for holding application state.
+3.  getState() method gives access to state it holds.
+4.  dispatch(action) method allow state to be updated.
+5.  It has subscribe(listener) method as well by which we can register listeners.
+6.  The listener function will be called every time when the state gets changed.
+7.  Provider Component is used to make the store available to all other components in the app.
+8.  We need to wrap our whole App inside <Provider> tag.
+9.  connect() is higher order component which helps to connect any component with the store.
+
+___________________________________________________________
+### React Redux + Hooks:
+1.  React redux offers a set of hooks to- subscribe to redux store and dispatch actions.
+2.  **useSelector** Hook-
+    - use selector is a hook react-redux library provides to get hold of any state that is maintained in the store 
+    -   Selector function is passed into useSelector and returns Returns selector function result. 
+    -   Selector function accepts the redux state as its argument and returns a value.
+    ```
+    const xyz= useSelector(selector: Function, equalityFn ?: Function)
+    ```
+3. **useDispatch** Hook-
+    - This hook returns a reference to the dispatch function from the Redux store.
+    - You may use it as to dispatch actions as needed.
+    ```
+    Syntax-
+    const dispatch = useDispatch()
+    ```
+
+___________________________________________________________
 ### What is middleware in Redux?
 -   Middleware is a higher-order function that intercepts actions before they reach the reducers. 
 -   Middleware functions are where you handle cross cutting concerns
 -   Middleware is a way to intercept actions before they reach the Redux store. Middleware functions are executed synchronously from top to bottom. 
 - Middleware is a higher order function that intercepts actions before they reach the reducers.
+
+
