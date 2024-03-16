@@ -364,6 +364,24 @@ _______________________________________________
 </Routes>
 ```
 ________________________________________________________________________
+### useNavigate Hook-
+1. The useNavigate hook returns a function that lets you navigate
+2.  The useNavigate hook can be used with or without parameters.
+3.  The useNavigate hook does not cause a render, it just changes the URL in the address bar.
+Example usage:
+```
+  const navigate= useNavigate();
+  function gotoAbout() {
+    navigate('/about');
+  }
+  return (
+    <button onClick={gotoAbout}>Contact Us</button>
+  )
+```
+4. Passing Data with useNavigate Hook in React.js-
+    -   Refer to Home.js and About.js for more information
+___________________________________________________________
+
 ### What is middleware in Redux?
 -   Middleware is a higher-order function that intercepts actions before they reach the reducers. 
 -   Middleware functions are where you handle cross cutting concerns
